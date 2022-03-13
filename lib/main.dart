@@ -1,3 +1,4 @@
+import 'package:animation_libraries/hero/hero.dart';
 import 'package:animation_libraries/implicit/implicit.dart';
 import 'package:flutter/material.dart';
 
@@ -38,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             ElevatedButton(
               style: TextButton.styleFrom(
@@ -58,7 +59,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 //backgroundColor: Colors.white, // background
                 primary: Colors.white, // foreground
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const HeroDemoWidget()));
+              },
               child: const Text("Hero animation demo"),
             ),
             ElevatedButton(

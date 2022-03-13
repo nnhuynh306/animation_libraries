@@ -30,8 +30,8 @@ class _ImplicitDemoWidget extends State<ImplicitDemoWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return Material(
+     child: Scaffold(
         appBar: AppBar(
           title: const Text("Flutter Implicit Demo"),
           backgroundColor: Colors.blue,
