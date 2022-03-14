@@ -151,7 +151,7 @@ class _StaggerDemoState extends State<StaggerDemo>
     super.initState();
 
     _controller = AnimationController(
-        duration: const Duration(milliseconds: 500), vsync: this);
+        duration: const Duration(milliseconds: 5000), vsync: this);
   }
 
   @override
@@ -171,7 +171,7 @@ class _StaggerDemoState extends State<StaggerDemo>
 
   @override
   Widget build(BuildContext context) {
-    timeDilation = 10.0; // 1.0 is normal animation speed.
+    timeDilation = 1.0; // 1.0 is normal animation speed.
     return Scaffold(
       appBar: AppBar(
         title: const Text('Staggered Animation'),
@@ -197,12 +197,4 @@ class _StaggerDemoState extends State<StaggerDemo>
       ),
     );
   }
-}
-
-void main() {
-  runApp(
-    const MaterialApp(
-      home: StaggerDemo(),
-    ),
-  );
 }
