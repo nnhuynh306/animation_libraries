@@ -1,5 +1,7 @@
 import 'package:animation_libraries/hero/hero.dart';
 import 'package:animation_libraries/implicit/implicit.dart';
+import 'package:animation_libraries/staggered/staggered.dart';
+import 'package:animation_libraries/staggered/staggered_demo.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -71,7 +73,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 //backgroundColor: Colors.white, // background
                 primary: Colors.white, // foreground
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const StaggeredAnimationDemo()));
+              },
               child: const Text("Staggered animation demo"),
             ),
           ],
