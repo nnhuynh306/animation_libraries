@@ -1,3 +1,4 @@
+import 'package:animation_libraries/explicit/demo.dart';
 import 'package:animation_libraries/hero/hero.dart';
 import 'package:animation_libraries/implicit/implicit.dart';
 import 'package:animation_libraries/staggered/staggered.dart';
@@ -43,6 +44,19 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            ElevatedButton(
+              style: TextButton.styleFrom(
+                //backgroundColor: Colors.white, // background
+                primary: Colors.white, // foreground
+              ),
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const ExplicitDemoWidget()));
+              },
+              child: const Text("Explicit Animations Demo"),
+            ),
             ElevatedButton(
               style: TextButton.styleFrom(
                 //backgroundColor: Colors.white, // background
