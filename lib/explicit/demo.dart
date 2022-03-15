@@ -2,6 +2,7 @@ import 'package:animation_libraries/explicit/animated_builder.dart';
 import 'package:animation_libraries/explicit/animated_widget.dart';
 import 'package:animation_libraries/explicit/monitoring_progress.dart';
 import 'package:animation_libraries/explicit/render_animation.dart';
+import 'package:animation_libraries/explicit/simultaneous_animation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -49,6 +50,14 @@ class ExplicitDemoWidget extends StatelessWidget {
               ));
             },
             child: Text("Animated Builder Demo"),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => const SimultaneousAnimationPage()
+              ));
+            },
+            child: Text("Simultaneous Animation"),
           )
         ],
       ),
