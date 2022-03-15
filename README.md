@@ -7,7 +7,7 @@ Flutter core animation library demo + documentation
 see docs/ for documentation and presentation
 see libs/ for demo 
 
-#Authors
+## Authors
 
 18127014 - Huỳnh Nhật Nam
 18127223 - Nguyễn Phúc Thịnh
