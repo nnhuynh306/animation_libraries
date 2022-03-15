@@ -12,7 +12,7 @@ class AnimatedImage extends StatefulWidget {
 class AnimatedImageState extends State<AnimatedImage> with SingleTickerProviderStateMixin {
 
   late AnimationController _controller;
-  late Animation _animation;
+  late Animation<double> _animation;
 
   @override
   void initState() {
