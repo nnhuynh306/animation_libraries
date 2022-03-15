@@ -5,7 +5,7 @@ Flutter core animation library demo + documentation
 ## Structure
 
 - check docs/ for documentation and presentation
-- check libs/ for demo 
+- check lib/ for demo 
 
 ## Authors
 
